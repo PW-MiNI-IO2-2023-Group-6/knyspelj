@@ -10,6 +10,7 @@ public sealed class IsZeroChecker
             string text => text == "0",
             null => true,
             char symbol => symbol == '0',
+            double num => num == 0,
             _ => false
         };
     }
